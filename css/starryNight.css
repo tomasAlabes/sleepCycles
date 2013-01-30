@@ -20,24 +20,3 @@ canvas {
   left: 0;
   top: 0;
 }
-
-/* line 19, ../sass/starryNight.scss */
-.container {
-  position: relative;
-  z-index: 2;
-}
-
-/* line 24, ../sass/starryNight.scss */
-.content {
-  border-radius: 5px;
-}
-
-/* line 28, ../sass/starryNight.scss */
-.hero-unit, .content {
-  background-color: rgba(43, 43, 64, 0.8);
-}
-
-/* line 32, ../sass/starryNight.scss */
-.hero-unit h1, .hero-unit p, .page-header {
-  color: white;
-}

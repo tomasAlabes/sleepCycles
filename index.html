@@ -5,75 +5,122 @@
     <!-- Bootstrap -->
     <link href="css/vendor/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/starryNight.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
     <script data-main="js/app/main.js" src="js/vendor/require-jquery.js"></script>
 </head>
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <div class="hero-unit">
-            <h1>Sleep cycles</h1>
-            <p>Find the time you need to go to sleep depending of the sleep cycles you want to rest</p>
-        </div>
+    <div class="hero-unit">
+        <h1>Sleep cycles</h1>
 
-        <div class="content">
+        <p>Find the time you need to go to sleep depending of the sleep cycles you want to rest</p>
+    </div>
+
+    <div class="content">
+        <div id="upTime">
+
             <h3>When do you want to get up?</h3>
 
-            <div id="upTime">
-                <select id="upHour">
-                    <option>(hour)</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">4</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                </select>
-                <select id="upMinutes">
-                    <option>(minute)</option>
-                    <option value="0">00</option>
-                    <option value="5">05</option>
-                    <option>10</option>
-                    <option>15</option>
-                    <option>20</option>
-                    <option>25</option>
-                    <option>30</option>
-                    <option>35</option>
-                    <option>40</option>
-                    <option>45</option>
-                    <option>50</option>
-                    <option>55</option>
-                </select>
-                <select class="upAmPm">
-                    <option>AM</option>
-                    <option>PM</option>
-                </select>
-            </div>
+            <select id="upHour">
+                <option>(hour)</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">4</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <select id="upMinutes">
+                <option>(minute)</option>
+                <option value="0">00</option>
+                <option value="5">05</option>
+                <option>10</option>
+                <option>15</option>
+                <option>20</option>
+                <option>25</option>
+                <option>30</option>
+                <option>35</option>
+                <option>40</option>
+                <option>45</option>
+                <option>50</option>
+                <option>55</option>
+            </select>
+            <select class="upAmPm">
+                <option>AM</option>
+                <option>PM</option>
+            </select>
 
-            <button id="calculateBtn" type="button" class="btn btn-primary" data-loading-text="Loading...">
+            <button id="calculateUpBtn" type="button" class="btn btn-primary calculateBtn"
+                    data-loading-text="Loading...">
                 Calculate sleep time
             </button>
-
         </div>
+
+        <div id="sleepTime">
+            <h3>Do you know just when you get to bed?</h3>
+
+            <select id="sleepHour">
+                <option>(hour)</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">4</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <select id="sleepMinutes">
+                <option>(minute)</option>
+                <option value="0">00</option>
+                <option value="5">05</option>
+                <option>10</option>
+                <option>15</option>
+                <option>20</option>
+                <option>25</option>
+                <option>30</option>
+                <option>35</option>
+                <option>40</option>
+                <option>45</option>
+                <option>50</option>
+                <option>55</option>
+            </select>
+            <select class="upAmPm">
+                <option>AM</option>
+                <option>PM</option>
+            </select>
+
+            <button id="calculateAwakeBtn" type="button" class="btn btn-primary calculateBtn"
+                    data-loading-text="Loading...">
+                Calculate sleep time
+            </button>
+        </div>
+    </div>
 
     <footer>
         tomas.alabes@gmail.com
     </footer>
-    </div>
+</div>
 
-    <!--http://sleepyti.me/-->
+<!--http://sleepyti.me/-->
 
-    <!-- SCRIPTS -->
-    <script src="js/vendor/bootstrap/bootstrap.min.js"></script>
+<!-- SCRIPTS -->
+<script src="js/vendor/bootstrap/bootstrap.min.js"></script>
 
-    <script src="js/app/main.js"></script>
+<script src="js/app/main.js"></script>
 
 </body>
 </html>

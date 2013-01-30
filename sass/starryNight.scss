@@ -13,22 +13,4 @@ canvas{
   z-index:1;
   left:0;
   top:0;
-
-}
-
-.container{
-  position: relative;
-  z-index: 2;
-}
-
-.content{
-  border-radius: 5px;
-}
-
-.hero-unit, .content{
-  background-color: rgba(43, 43, 64, 0.80);
-}
-
-.hero-unit h1, .hero-unit p , .page-header{
-  color: white;
 }

@@ -1,0 +1,52 @@
+/* line 3, ../sass/main.scss */
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+/* line 8, ../sass/main.scss */
+.content {
+  border-radius: 5px;
+  padding: 10px 20px 20px 20px;
+}
+
+/* line 13, ../sass/main.scss */
+.hero-unit, .content {
+  background-color: rgba(43, 43, 64, 0.8);
+}
+
+/* line 17, ../sass/main.scss */
+.hero-unit h1, .hero-unit p, .page-header {
+  color: white;
+}
+
+/* line 21, ../sass/main.scss */
+select {
+  width: 120px;
+}
+
+/* line 25, ../sass/main.scss */
+.calculateBtn, select {
+  display: inline;
+}
+
+/* line 29, ../sass/main.scss */
+select {
+  margin-right: 5px;
+}
+
+/* line 33, ../sass/main.scss */
+#sleepTime {
+  margin-top: 40px;
+}
+
+/* line 37, ../sass/main.scss */
+.calculateBtn {
+  margin-left: 80px;
+  margin-bottom: 5px;
+}
+
+/* line 42, ../sass/main.scss */
+h3 {
+  margin-bottom: 20px;
+}
