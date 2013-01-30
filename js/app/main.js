@@ -1,3 +1,3 @@
-require(['nightSky'], function(){
+require(['jquery', 'nightSky'], function(){
 
 });

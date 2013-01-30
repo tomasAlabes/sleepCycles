@@ -1,37 +1,43 @@
+/* line 3, ../sass/starryNight.scss */
 body {
-    overflow: hidden;
-    background-color: #094d81;/* Old browsers */
-    background: -moz-linear-gradient(top, #094d81 0%, #3a91d5 49%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #094d81), color-stop(49%, #3a91d5)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #094d81 0%, #3a91d5 49%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #094d81 0%, #3a91d5 49%); /* Opera11.10+ */
-    background: -ms-linear-gradient(top, #094d81 0%, #3a91d5 49%); /* IE10+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#094d81', endColorstr = '#3a91d5', GradientType = 0); /* IE6-9 */
-    background: linear-gradient(top, #094d81 0%, #3a91d5 49%); /* W3C */
-
-    color: white;
+  overflow: hidden;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #094d81), color-stop(70%, #3a91d5)), #094d81;
+  background: -webkit-linear-gradient(top, #094d81 0%, #3a91d5 70%), #094d81;
+  background: -moz-linear-gradient(top, #094d81 0%, #3a91d5 70%), #094d81;
+  background: -o-linear-gradient(top, #094d81 0%, #3a91d5 70%), #094d81;
+  background: -ms-linear-gradient(top, #094d81 0%, #3a91d5 70%), #094d81;
+  background: linear-gradient(top, #094d81 0%, #3a91d5 70%), #094d81;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF094D81', endColorstr='#FF3A91D5');
+  /* IE6-9 */
+  color: white;
 }
 
-canvas{
-    position:absolute;
-    z-index:1;
-    left:0;
-    top:0;
+/* line 11, ../sass/starryNight.scss */
+canvas {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
 }
 
-.container{
-    position: relative;
-    z-index: 2;
+/* line 19, ../sass/starryNight.scss */
+.container {
+  position: relative;
+  z-index: 2;
 }
 
-.content{
-    border-radius: 5px;
+/* line 24, ../sass/starryNight.scss */
+.content {
+  border-radius: 5px;
 }
 
-.hero-unit, .content{
-    background-color: rgba(43, 43, 64, 0.80);
+/* line 28, ../sass/starryNight.scss */
+.hero-unit, .content {
+  background-color: rgba(43, 43, 64, 0.8);
 }
 
-.hero-unit h1, .hero-unit p , .page-header{
-    color: white;
+/* line 32, ../sass/starryNight.scss */
+.hero-unit h1, .hero-unit p, .page-header {
+  color: white;
 }
