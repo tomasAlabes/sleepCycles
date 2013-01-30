@@ -14,28 +14,12 @@
   background-color: rgba(43, 43, 64, 0.80);
 }
 
-.hero-unit h1, .hero-unit p , .page-header{
-  color: white;
-}
-
-select{
-  width: 120px;
-}
-
-.calculateBtn, select{
-  display: inline;
-}
-
-select{
-  margin-right: 5px;
-}
-
-#sleepTime{
+#sleepTimeContainer{
   margin-top: 40px;
 }
 
 .calculateBtn{
-  margin-left: 80px;
+  display: inline;
   margin-bottom: 5px;
 }
 
