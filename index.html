@@ -10,11 +10,67 @@
 </head>
 <body>
 
-    <h1>Hello, world!</h1>
+    <div class="container">
 
+        <div class="hero-unit">
+            <h1>Sleep cycles</h1>
+            <p>Find the time you need to go to sleep depending of the sleep cycles you want to rest</p>
+        </div>
+
+        <div class="content">
+            <h3>When do you want to get up?</h3>
+
+            <div id="upTime">
+                <select id="upHour">
+                    <option>(hour)</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">4</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select id="upMinutes">
+                    <option>(minute)</option>
+                    <option value="0">00</option>
+                    <option value="5">05</option>
+                    <option>10</option>
+                    <option>15</option>
+                    <option>20</option>
+                    <option>25</option>
+                    <option>30</option>
+                    <option>35</option>
+                    <option>40</option>
+                    <option>45</option>
+                    <option>50</option>
+                    <option>55</option>
+                </select>
+                <select class="upAmPm">
+                    <option>AM</option>
+                    <option>PM</option>
+                </select>
+            </div>
+
+            <button id="calculateBtn" type="button" class="btn btn-primary" data-loading-text="Loading...">
+                Calculate sleep time
+            </button>
+
+        </div>
+
+    <footer>
+        tomas.alabes@gmail.com
+    </footer>
+    </div>
+
+    <!--http://sleepyti.me/-->
 
     <!-- SCRIPTS -->
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/vendor/bootstrap/bootstrap.min.js"></script>
 
     <script src="js/app/main.js"></script>

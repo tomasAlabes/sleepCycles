@@ -1,8 +1,5 @@
-body{
+body {
     overflow: hidden;
-}
-
-body.starry-night{
     background-color: #094d81;/* Old browsers */
     background: -moz-linear-gradient(top, #094d81 0%, #3a91d5 49%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #094d81), color-stop(49%, #3a91d5)); /* Chrome,Safari4+ */
@@ -11,6 +8,8 @@ body.starry-night{
     background: -ms-linear-gradient(top, #094d81 0%, #3a91d5 49%); /* IE10+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#094d81', endColorstr = '#3a91d5', GradientType = 0); /* IE6-9 */
     background: linear-gradient(top, #094d81 0%, #3a91d5 49%); /* W3C */
+
+    color: white;
 }
 
 canvas{
@@ -18,4 +17,21 @@ canvas{
     z-index:1;
     left:0;
     top:0;
+}
+
+.container{
+    position: relative;
+    z-index: 2;
+}
+
+.content{
+    border-radius: 5px;
+}
+
+.hero-unit, .content{
+    background-color: rgba(43, 43, 64, 0.80);
+}
+
+.hero-unit h1, .hero-unit p , .page-header{
+    color: white;
 }

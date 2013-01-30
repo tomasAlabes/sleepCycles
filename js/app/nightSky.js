@@ -37,19 +37,6 @@ require(['ImageParticle'], function () {
             this.HALF_WIDTH = this.SCREEN_WIDTH / 2;
             this.HALF_HEIGHT = this.SCREEN_HEIGHT / 2;
 
-            /*this.mouseX = this.HALF_WIDTH;
-             this.mouseY = this.HALF_HEIGHT;
-
-             FB.addEvent(document, 'mousemove', function(e) {
-             Shared.onMouseMove.call(Shared, e)
-             });
-             FB.addEvent(document, 'mousedown', function(e) {
-             Shared.onMouseDown.call(Shared, e)
-             });
-             FB.addEvent(document, 'mouseup', function(e) {
-             Shared.onMouseUp.call(Shared, e)
-             });*/
-
             this.canvas = this.createCanvas(this.SCREEN_WIDTH, this.SCREEN_HEIGHT);
 
             document.body.appendChild(this.canvas);
@@ -79,19 +66,6 @@ require(['ImageParticle'], function () {
                 }
             }
             return !!(elem.getContext && elem.getContext('2d'));
-        },
-
-        onMouseMove: function (event) {
-            this.mouseX = event.clientX;
-            this.mouseY = event.clientY;
-        },
-
-        onMouseDown: function (event) {
-            this.mouseDown = true;
-        },
-
-        onMouseUp: function (event) {
-            this.mouseDown = false;
         },
 
         //http://robertpenner.com/easing/easing_demo.html
@@ -137,7 +111,6 @@ require(['ImageParticle'], function () {
         init: function (canvas) {
 
             var body = document.getElementsByTagName("body")[0];
-            body.className = "starry-night";
             body.style.height = Shared.SCREEN_WIDTH + 'px';
 
             this.context = canvas.getContext('2d');
