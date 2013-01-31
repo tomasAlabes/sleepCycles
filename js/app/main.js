@@ -5,8 +5,8 @@ require(['jquery', 'nightSky'], function () {
 
     function renderCycles(timeMoment, $container, id) {
         var threeCyclesSleep = timeMoment.subtract('minutes', 90 * 3).format('HH:mm A'),
-            fourCyclesSleep = timeMoment.subtract('minutes', 90 * 4).format('HH:mm A'),
-            fiveCyclesSleep = timeMoment.subtract('minutes', 90 * 5).format('HH:mm A');
+            fourCyclesSleep = timeMoment.subtract('minutes', 90).format('HH:mm A'),
+            fiveCyclesSleep = timeMoment.subtract('minutes', 90).format('HH:mm A');
         var method = ($('#' + id)) ? 'html' : 'append';
 
         $container[method] (calculationTemplate({
