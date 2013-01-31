@@ -111,7 +111,7 @@ require(['ImageParticle'], function () {
         init: function (canvas) {
 
             var body = document.getElementsByTagName("body")[0];
-            body.style.height = Shared.SCREEN_WIDTH + 'px';
+            body.style.height = Shared.SCREEN_HEIGHT * 1.6 + 'px';
 
             this.context = canvas.getContext('2d');
 

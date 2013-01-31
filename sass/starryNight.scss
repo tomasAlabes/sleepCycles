@@ -1,10 +1,9 @@
 @import 'compass';
 
 body {
-  overflow: hidden;
+  //overflow: hidden;
   @include background(linear-gradient(top, #094d81 0%, #3a91d5 70%), #094d81);
   @include filter-gradient(#094d81, #3a91d5); /* IE6-9 */
-
   color: white;
 }
 
